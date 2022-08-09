@@ -18,8 +18,8 @@ module.exports = {
     // demos
     apps: {
       '...Vanilla...': {
-        script: `npx cowsay "Nothing wrong with vanilla 🍦"`,
-        description: ` 🔻 Vanilla`,
+        script: 'npx cowsay "Nothing wrong with vanilla 🍦"',
+        description: ' 🔻 Vanilla',
       },
       demo: {
         clean: {
@@ -36,8 +36,8 @@ module.exports = {
         },
       },
       '...Angular...': {
-        script: `npx cowsay "Test all the Angles!"`,
-        description: ` 🔻 Angular`,
+        script: 'npx cowsay "Test all the Angles!"',
+        description: ' 🔻 Angular',
       },
       'demo-angular': {
         clean: {
@@ -53,7 +53,27 @@ module.exports = {
           description: '⚆  Run Android  🤖',
         },
       },
+
+      '...Vue...': {
+        script: 'npx cowsay "You like the vue here..."',
+        description: ' 🔻 Vue',
+      },
+      'demo-vue': {
+        clean: {
+          script: 'nx run demo-vue:clean',
+          description: '⚆  Clean  🧹',
+        },
+        ios: {
+          script: 'nx run demo-vue:ios',
+          description: '⚆  Run iOS  ',
+        },
+        android: {
+          script: 'nx run demo-vue:android',
+          description: '⚆  Run Android  🤖',
+        },
+      },
     },
+
     '⚙️': {
       script: `npx cowsay "@heywhy/* packages will keep your ⚙️ cranking"`,
       description: '_____________  @heywhy/*  _____________',

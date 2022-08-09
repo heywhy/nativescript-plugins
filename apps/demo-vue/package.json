@@ -1,0 +1,12 @@
+{
+  "main": "./app/app.ts",
+  "description": "NativeScript Application",
+  "dependencies": {
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@heywhy/ns-secure-storage": "file:../../packages/ns-secure-storage"
+  },
+  "devDependencies": {
+    "@nativescript/android": "^8.3.0",
+    "@nativescript/ios": "^8.3.0"
+  }
+}

@@ -3,6 +3,7 @@
   "projects": {
     "demo": "apps/demo",
     "demo-angular": "apps/demo-angular",
-    "ns-secure-storage": "packages/ns-secure-storage"
+    "ns-secure-storage": "packages/ns-secure-storage",
+    "demo-vue": "apps/demo-vue/"
   }
 }
