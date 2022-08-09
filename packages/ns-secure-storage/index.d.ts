@@ -1,3 +1,6 @@
-import { NsSecureStorageCommon } from './common';
+import { SecureStorageCommon } from './common';
 
-export declare class NsSecureStorage extends NsSecureStorageCommon {}
+// Export any shared classes, constants, etc.
+export * from './common';
+
+export class SecureStorage extends SecureStorageCommon {}
