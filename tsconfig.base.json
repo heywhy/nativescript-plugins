@@ -20,7 +20,9 @@
       }
     ],
     "paths": {
-      "@demo/shared": ["tools/demo/index.ts"]
+      "@demo/shared": ["tools/demo/index.ts"],
+      "@heywhy/*": ["packages/*"],
+      "@heywhy/ns-secure-storage": ["packages/ns-secure-storage/index.d.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

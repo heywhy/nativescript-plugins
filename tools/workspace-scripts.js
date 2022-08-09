@@ -55,12 +55,19 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@heywhy/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @heywhy/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
+    '@heywhy': {
+      // @heywhy/ns-secure-storage
+      'ns-secure-storage': {
+        build: {
+          script: 'nx run ns-secure-storage:build.all',
+          description: '@heywhy/ns-secure-storage: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -71,8 +78,12 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      'ns-secure-storage': {
+        script: 'nx run ns-secure-storage:focus',
+        description: 'Focus on @heywhy/ns-secure-storage',
+      },
       reset: {
-        script: 'nx g @nativescript/plugin-tools:focus-packages',
+        script: 'nx g @heywhy/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },
